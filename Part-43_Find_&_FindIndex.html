@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Find & Findindex in Array</title>
+</head>
+
+<body>
+    <h1>Javascript Find & Findindex in Array...</h1>
+    <script>
+
+        // for find - return the value 
+        var x = ["10","56", "28", "98"];
+
+        document.write(x);
+
+        document.write("<br/>" + "<br/>");
+        var y = x.find(checkList);
+        document.write(y);
+        
+        function checkList(age){
+            return age >= 18;
+        }
+        document.write("<br/>"  + "<br/>");
+
+        // for findIndex - return the index 
+        document.write("<br/>" + "<br/>");
+        var y = x.findIndex(checkList);
+        document.write("[" + y + "]");
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+   <title>BOM Window open & close method in Javascript</title>
+   <!-- CSS File -->
+   <link rel="stylesheet" href="./css/mincss.css">
+</head>
+
+<body>
+   <section id="wrapper">
+      <div id="test_1" style="margin-top:50px; border-radius: 10px;">
+         BOM Window open & close method in Javascript...
+         <br/><br/>
+         <div>
+            <button id="" onclick="openWindow()">Open Window</button>
+            <button id="" onclick="closeWindow()">Close Window</button>
+         </div>
+      </div>
+   </section>
+   </section>
+   <!-- JS Code -->
+   <script>
+      var currentWindow;
+      // to oepn new window.
+      function openWindow(){
+        currentWindow = window.open("https://kumarabhijeett.blogspot.com/", "","width=500px, height=500px, top=250px, left=250px;" );
+      }
+
+      // to close opened window.
+      function closeWindow(){
+         currentWindow.close();
+      }
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Function Return Value.</title>
+</head>
+
+<body>
+    <h1>Javascript Function Return Value....</h1>
+    <script>
+
+        function myFunction() {
+            return "Hello Welcome.";
+        }
+
+        document.write(myFunction());
+
+        document.write("<br/>");
+        document.write("<br/>");
+
+        function myName(fname = "Abhijeet", lname = "Kumar"){
+            var a = fname + " " + lname;
+            return a;
+        }
+
+        var username = myName("Abhishek", "Sharma");
+
+        document.write(myName());
+        document.write("<br/>");
+        document.write(username);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Array</title>
+</head>
+
+<body>
+    <h1>Javascript Array...</h1>
+
+
+    <script>
+
+        // Example 1
+        var a=[1, "Abhijeet", 3, "Kumar", 5];
+
+        for(var i = 0; i<=4; i++){
+            document.write(a[i] + "<br>");
+        }
+
+        document.write("<br/>");
+        document.write("<br/>");
+
+        // Example 2
+
+        var arr=[10,56,22,36,20];
+        var sum = 0;
+        document.write("<ul>");
+        for(var i = 0; i<=4; i++){
+            document.write("<li>" + arr[i] + "</li>");
+            sum = sum + arr[i];
+        }
+        document.write("</ul>");
+        document.write("Sum : " + sum);
+
+        document.write("<br/>");
+        document.write("<br/>");
+
+        // Example 3
+
+        var arr = new Array();
+        // arr[0] = 10;
+        // arr[1] = 20;
+        // arr[2] = 30;
+        // arr[3] = 40;
+        // arr[4] = 50;
+
+        for(var i=0; i<5; i++){
+            arr[i] = prompt("Enter number : ");
+        }
+
+        for(var i=0; i<5; i++){
+            document.write(arr[i] + "<br/>");
+        }
+
+        // document.write("<br/>");
+
+    </script>
+</body>
+
+</html>

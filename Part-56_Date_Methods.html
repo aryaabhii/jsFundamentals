@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+    <title>Date Method in Javascript</title>
+</head>
+
+<body>
+    <h1>Date Method in Javascript...</h1>
+    <script>
+        // these all for get dates.
+        var now = new Date();
+        document.write(now);
+        document.write("<br>" + "<br>" + now.toDateString()); // for formatted date. 
+        document.write("<br>" + "<br>" + now.getDate()); // for only date.
+        document.write("<br>" + "<br>" + now.getFullYear()); // for only year.
+        document.write("<br>" + "<br>" + now.getMonth()); // for only month.
+        document.write("<br>" + "<br>" + now.getDate()); // for only day.
+        document.write("<br>" + "<br>" + now.getHours()); // for hours only.
+        document.write("<br>" + "<br>" + now.getMinutes()); // for minutes only.
+        document.write("<br>" + "<br>" + now.getSeconds()); // for second only
+        document.write("<br>" + "<br>" + now.getMilliseconds() + "<br>" + "<br>"); // for millisecond.
+
+        // these all for set.
+        var setup = new Date();
+        setup.setDate(5);
+        document.write(setup.getDate() + "/" + setup.getDay() + "/" + setup.getFullYear());
+        document.write("<br>" + "<br>" +  setup);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+    <title>Map Method in Javascript</title>
+</head>
+
+<body>
+    <h1>Map Method in Javascript...</h1>
+    <script>
+
+        var x = [1,2,3,4,5];
+
+        document.write(x + "<br>");
+
+        console.log(x);
+
+        var y = x.map(demo);
+
+        function demo(z){
+            return z * 10;
+        }
+
+        document.write("<br>" + y);
+
+        console.log(y);
+
+        document.write("<br>" + "<br>");
+
+        // Object Creation....
+        var obj = [
+            {fname : 'Abhijeet', lname : 'Kumar'},
+            {fname : 'Sujeet',   lname : 'Kumar'},
+            {fname : 'Mukesh',   lname : 'Kumar'},
+        ];
+
+        var m = obj.map(demo2);
+
+        function demo2(j){
+            return j.fname + " " + j.lname;
+        }
+
+        document.write(m);
+        console.log(m);
+
+    </script>
+</body>
+
+</html>

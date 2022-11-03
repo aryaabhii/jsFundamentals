@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Concate & Join in Array</title>
+</head>
+
+<body>
+    <h1>Javascript Concate & Join in Array...</h1>
+
+
+    <script>
+
+        // Example for concate.
+        var x = ["Ram", "Arman", "Kumar", "Ravi"];
+        var y = x.concat("Shyam", "Gopal", "Harprit", "Gopi");
+        document.write(y);
+
+        document.write("<br/>" + "<br/>");
+
+        var x = ["Ram", "Arman", "Kumar", "Ravi"];
+        var y = ["Shyam", "Gopal", "Harprit", "Gopi"];
+        var p = [1,2,3,4,5];
+        var z = x.concat(y,p);
+        document.write(z);
+
+        document.write("<br/>" + "<br/>");
+          
+        // Example of Join.
+        var z = x.join(" <br> ");
+        document.write(z);
+
+        document.write("<br/>" + "<br/>");
+
+        var z = x.join("-");
+        document.write(z);
+
+        // document.write("<br/>");
+
+    </script>
+</body>
+
+</html>

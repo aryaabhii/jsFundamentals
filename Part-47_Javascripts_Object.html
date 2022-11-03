@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object</title>
+</head>
+
+<body>
+    <h1>Javascript Object...</h1>
+    <script>
+
+        var obj = {
+            fname : "Abhijeet",
+            lname : "Kumar",
+            age : 20,
+            email : "aryaabhi84@gmail.com",
+            name : ['Amit','Sonu','Monu'],
+            salary : function(){
+                return 30000;
+            },
+            fullName : function(){
+                return this.fname + " " + this.lname;
+            },
+            skills : {
+                'programming' : 'c++, Java',
+                'desigining' : 'Html, CSS, Bootstrap'
+            }
+        }
+
+        console.log(obj);
+        // objects value.
+        document.write(obj.fname + " " + obj.lname + " " + obj.age + " " + obj.email);
+
+        // array value using object.
+        document.write("<br>" + obj.name);
+        // array value using object with index number.
+        document.write("<br>" + obj.name[1]);
+        // function value using object.
+        document.write("<br>" + obj.salary());
+        document.write("<br>" + obj.fullName());
+        // object using objects.
+        document.write("<br>" + obj.skills.programming);
+        document.write("<br>" + obj.skills.desigining);
+    </script>
+</body>
+
+</html>

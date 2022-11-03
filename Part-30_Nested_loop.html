@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Nested Loop</title>
+</head>
+
+<body>
+    <h1>Javascript Nested Loop...</h1>
+
+
+    <script>
+        for(var i = 1; i<=100; i = i + 10){
+            for(var j = i; j < i+10; j++){
+                document.write(j + " ");
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<br/>");
+
+        for(var i = 1; i<=5; i++){
+            for(var j = 1; j<=i; j++){
+                document.write(j + " ");
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<br/>");
+
+        for(var i=1; i<=5; i++){
+            for(var j=1; j<=i; j++){
+                document.write(i + " ");
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<br/>");
+
+        for(var i=1; i<=5; i++){
+            for(var j=1; j<=i; j++){
+                document.write("*" + " ");
+            }
+            
+            document.write("<br/>");
+        }
+
+        document.write("<br/>");
+
+        var num = 5;
+
+        // outer loop for row.
+        for (var i = 1; i <= num; i++) {
+            // inner loop.
+            for (var j = 1; j <= i; j++) {
+                // checking condtion if even then print 1 if odd then print 0
+                if (((i + j) % 2) == 0) {
+                    document.write("1 "); // printig 1 when even
+                } else {
+                    document.write("0 "); // printing 0 when odd
+                }
+            }
+            document.write("<br/>");
+        }
+
+
+        // document.write("<br/>");
+    </script>
+</body>
+
+</html>

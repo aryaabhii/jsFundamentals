@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+    <title>String Method in Javascript</title>
+</head>
+
+<body>
+    <h1>String Method in Javascript...</h1>
+    <script>
+        // 
+        var x = "Welcome to Javacript Learning.";
+        var y = "Javascript.";
+
+        var ascii = String.fromCharCode(65); // for ascii code.
+        var con   = x.concat(y,x); // for join two or more sentence.
+        var s     = x.split(" ");  // to remove spaces from sentences.
+        var r     = x.repeat(2);  // it will repeate sentences.
+        var sc    = x.slice(6);  // it will cut the sentence.
+        var ss    = x.substr(13); // also used to cut but it has no last.
+        var v     = x.valueOf(x); 
+   
+        document.write("<br><br>" + x + "<br><br>");
+
+        for (var i = 0; i < x.length; i++) {
+            document.write("[" + i + "]" + " " + x[i]);
+        }
+
+        document.write("<br><br>" + "<b>ASCII Code : </b> " + ascii);
+        document.write("<br><br>" + "<b>Concate    : </b> " + con);
+        document.write("<br><br>" + "<b>Split      : </b> " + s);
+        console.log(s); // for console view.
+        document.write("<br><br>" + "<b>Repeat     : </b> " + r);
+        document.write("<br><br>" + "<b>Slice      : </b> " + sc);
+        document.write("<br><br>" + "<b>Substr     : </b> " + ss);
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Switch Case.</title>
+</head>
+
+<body>
+    <h1>Javascript Switch Case....</h1>
+    <script>
+        let i = 1;
+
+        switch(i)
+        {
+            case 0:
+                document.write("i is 0");
+                break;
+            case 1:
+                document.write("i is 1");
+                break;
+            case 2:
+                document.write("i is 2");
+                break;
+            default: 
+                document.write("i is greater than 2.");
+        }
+
+        document.write("<br />");
+        document.write("<br />");
+
+        let age = 20;
+
+        switch (true) {
+            case (age >= 15 && age >= 20):
+                document.write("you are eligible.");
+                break;
+            case (age >= 21 && age >= 30):
+                document.write("you are not eligible.");
+                break;
+            default:
+                document.write("Please enter valid age.");
+        }
+        
+    </script>
+</body>
+
+</html>

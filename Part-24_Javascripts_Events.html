@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Events.</title>
+</head>
+
+<body onkeypress="hello()">
+    <h1>Javascript Events....</h1>
+    <!-- for onclick. -->
+    <button onclick="hello()">Click Me.</button>
+    <br>
+    <!-- For double click -->
+    <p ondblclick="hello()">Double Click.</p>
+    <br>
+    <!-- For right click -->
+    <button oncontextmenu="hello()">Click Me.</button>
+    <br><br>
+    <!-- For mouse hover click -->
+    <button onmouseenter="hello()">Hover Me.</button>
+    <br><br>
+    <!-- For mouse hover out click -->
+    <button onmouseout="hello()">Hover Me Out.</button>
+    <!-- For mouse down click -->
+    <button onmousedown="hello()">Down Me.</button>
+
+    <!-- Onscroll -->
+    <!-- onresize -->
+     
+    <script>
+        
+        function hello() {
+            document.write("Hello, Welcome.")
+        }
+
+        document.write("<br/>");
+        document.write("<br/>");
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Some & Every in Array</title>
+</head>
+
+<body>
+    <h1>Javascript Some & Every in Array...</h1>
+    <script>
+
+        // Example for Some.
+        // We have to pass atleast one function in it.
+        var x = ["10", "12", "13", "10"];
+        document.write(x + "<br/>");
+
+        var y = x.some(checkAdult);
+
+        document.write(y + "<br/>");
+
+        // if this conditon match means value is greater than 18 then it will return true else false.
+        function checkAdult(x){
+            return x >= 18;
+        }
+
+        document.write("<br/>" + "<br/>");
+
+        // for every - It will check every value in array if the given condition fulfilled then give true if anyone will not match then it will return false.
+
+        var x = ["30", "50", "23", "210"];
+
+        var y = x.every(checkAdult);
+
+        document.write(y + "<br/>");
+
+
+    </script>
+</body>
+
+</html>

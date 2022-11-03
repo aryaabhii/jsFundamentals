@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+    <title>String Method in Javascript</title>
+</head>
+
+<body>
+    <h1>String Method in Javascript...</h1>
+    <script>
+        // 
+        var x = "    Welcome to Javacript Learning.";
+        var y = x.length; // for length count.
+        var l = x.toLowerCase(); // for lower case.
+        var u = x.toUpperCase(); // for upper case.
+        var i = x.includes("to"); // it will help to find.
+        var s = x.startsWith("Wel"); // it also help for finding from beginning.
+        var e = x.endsWith("ng."); // it also help for finding from ending.
+        var se = x.search("t"); // help for search.
+        var m = x.match(/to/g); // help for matching.
+        var t = x.indexOf("to"); // it will find the index number if more than more value in array then it will find first one and stop from first.
+        var la = x.indexOf("to"); // it will find the index number if more than more value in array then it will find first one and stop from last.
+        var re = x.replace("Javacript Learning.", "Code4Eductaion"); // it will use to replace.
+        var tr = x.trim(); // it will help to trim or remove white space. 
+
+        document.write("<br><br>" + x + "<br><br>");
+
+        for(var i=0; i<=x.length;i++){
+            document.write("["+ i + "]" + " " + x[i]); 
+        }
+
+        document.write(y);
+        document.write("<br><br>" + "<b> Lower Case        : </b>" + l);
+        document.write("<br><br>" + "<b> Upper Case        : </b>" + u);
+        document.write("<br><br>" + "<b> Include           : </b>" + i);
+        document.write("<br><br>" + "<b> Search            : </b>" + s);
+        document.write("<br><br>" + "<b> Search from Start : </b>" + e);
+        document.write("<br><br>" + "<b> Search from end   : </b>" + se);
+        document.write("<br><br>" + "<b> Match             : </b>" + m);
+        document.write("<br><br>" + "<b> Index Of          : </b>" + t);
+        document.write("<br><br>" + "<b> Last Index Of     : </b>" + la);
+        document.write("<br><br>" + "<b> Replacing         : </b>" + re);
+        document.write("<br><br>" + "<b> Trim              : </b>" + tr);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>History Object</title>
+</head>
+<body>
+   <h1>History Object Method</h1>
+   <button onclick="backFunction()">Back</button>
+   <button onclick="backFunction()">Forward</button>
+   <button onclick="backFunction()">Go</button>
+   <script>
+      function backFunction(){
+         history.back();
+      }
+
+      function forwardFunction(){
+         history.forward();
+      }
+
+      function goFunction() {
+         history.go(-1);
+      }
+   </script>
+</body>
+</html>

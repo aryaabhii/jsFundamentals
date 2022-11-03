@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+   <title>BOM method in Javascript</title>
+   <!-- CSS File -->
+   <link rel="stylesheet" href="./css/mincss.css">
+</head>
+
+<body>
+   <section id="wrapper">
+      <div id="test_1" style="margin-top:50px;">
+         Resize window
+      </div>
+   </section>
+   </section>
+   <!-- JS Code -->
+   <script>
+
+      window.onresize = resizeFunction;
+
+      function resizeFunction(){
+
+         console.clear();
+
+         var iHeight = window.innerHeight;
+         console.log("Inner height : " + " " + iHeight);
+
+         var oHeight = window.outerHeight;
+         console.log("Outter height : " + " " + oHeight);
+
+
+         var iWidth = window.innerWidth;
+         console.log("Inner width : " + " " + iWidth);
+
+         var oWidth = window.outerWidth;
+         console.log("Outter width : " + " " + oWidth);
+      }
+   </script>
+</body>
+
+</html>

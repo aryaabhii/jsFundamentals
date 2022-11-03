@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript MultiDimensional Array</title>
+</head>
+
+<body>
+    <h1>Javascript MultiDimensional Array...</h1>
+
+
+    <script>
+
+        // Example 1
+
+        var array =[
+            ["Name", "Roll", "Course", "City"],
+            ["Abhijeet", 22, "BCA", "Patna"],
+            ["User-1", 22, "BBM", "Patna"],
+            ["User-2", 22, "MCA", "Patna"],
+            ["Abhijeet", 22, "M.Tech", "Patna"],
+            ["User-1", 22, "BCA", "Patna"],
+            ["User-2", 22, "BCA", "Patna"],
+            ["Abhijeet", 22, "BCA", "Patna"],
+            ["User-1", 22, "BCA", "Patna"],
+            ["User-2", 22, "BCA", "Patna"],
+            ["Abhijeet", 22, "BCA", "Patna"],
+            ["User-1", 22, "BCA", "Patna"],
+            ["User-2", 22, "BCA", "Patna"],
+        ]
+
+        for(var i=0; i< array.length; i++){
+            for(var j=0; j<array[i].length; j++){
+                document.write(array[i][j] + " ");
+            }
+            document.write("<br/>");
+        }
+
+        document.write("<br/>");
+        document.write("<br/>");
+
+        // Example 2 using table
+        document.write("<table border='1px'>");
+        for(var i=0; i< array.length; i++){
+            document.write("<tr>");
+            for(var j=0; j<array[i].length; j++){
+                document.write("<td>" + array[i][j] + "</td>");
+            }
+            document.write("</td>");
+        }
+        document.write("</table>");
+
+        // document.write("<br/>");
+
+    </script>
+</body>
+
+</html>

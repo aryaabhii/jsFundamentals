@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+   <title>BOM ResizeBy method in Javascript</title>
+   <!-- CSS File -->
+   <link rel="stylesheet" href="./css/mincss.css">
+</head>
+
+<body>
+   <section id="wrapper">
+      <div id="test_1" style="margin-top:50px; border-radius: 10px;">
+         BOM ResizeBy method in Javascript...
+         <br /><br />
+         <div>
+            <button id="" onclick="openWindow()">Open Window</button>
+            <button id="" onclick="resizeWindow()">Resize Window</button>
+         </div>
+      </div>
+   </section>
+   </section>
+   <!-- JS Code -->
+   <script>
+      var myWindow;
+      function openWindow() {
+         myWindow = window.open("", "", "width=200px, height=200px, top=30px, left=30px;");
+         myWindow.document.write("<p/>This is my window.</p>");
+      }
+
+      // resize to.
+      function resizeWindow(){
+         myWindow.resizeTo(600,600);
+      }
+
+      // resize by.
+      function resizeWindow(){
+         myWindow.resizeBy(300,300);
+      }
+
+   </script>
+</body>
+
+</html>

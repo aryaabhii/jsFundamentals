@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Foreach Loop</title>
+</head>
+
+<body>
+    <h1>Javascript Foreach Loop...</h1>
+    <script>
+
+        // for each. It is used to print value line by line.
+        var x = ["10", "56", "28", "98"];
+
+        document.write(x + "</br>");
+
+        x.forEach(loop)
+        
+        function loop(value){
+            document.write(value + "<br>");
+        }
+        
+        document.write("<br/>" + "<br/>");
+
+        x.forEach(function(value, index){
+            document.write("[" + index + "]" + " " + value + "<br>");
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie  wport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Filter in Array</title>
+</head>
+
+<body>
+    <h1>Javascript Filter in Array...</h1>
+    <script>
+
+        // for filter - when we use it then it will create a new array. 
+        var x = ["10", "56", "28", "98"];
+        var age = 18;
+
+        document.write(x + "</br>");
+        
+        var f = x.filter(checkAge);
+
+        document.write(f + "</br>");
+        
+        document.write(typeof(f));
+
+        function checkAge(age){
+            return age >= 18;
+        }
+
+        document.write("<br/>" + "<br/>");
+       
+
+
+    </script>
+</body>
+
+</html>
